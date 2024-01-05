@@ -11,7 +11,7 @@ dbname = st.secrets["DB_NAME"]
 def create_connection():
     connection = pymysql.connect(
         host='www.richgm.site',
-        user=username',
+        user=username,
         password=pwd,
         db=dbname,
         charset='utf8mb4',
