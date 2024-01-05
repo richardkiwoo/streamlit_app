@@ -2,7 +2,6 @@ import streamlit as st
 import pymysql
 from datetime import datetime
 
-
 username = st.secrets.db_username
 pwd = st.secrets.db_pwd
 dbname = st.secrets.db_name
