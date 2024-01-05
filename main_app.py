@@ -3,9 +3,9 @@ import pymysql
 from datetime import datetime
 
 
-username = st.secrets["DB_USER_NM"]
-pwd = st.secrets["DB_PWD"]
-dbname = st.secrets["DB_NAME"]
+username = st.secrets.db_username
+pwd = st.secrets.db_pwd
+dbname = st.secrets.db_name
 
 # MySQL 연결 설정
 def create_connection():
