@@ -5,6 +5,7 @@ from datetime import datetime
 
 username = st.secrets["DB_USER_NM"]
 pwd = st.secrets["DB_PWD"]
+dbname = st.secrets["DB_NAME"]
 
 # MySQL 연결 설정
 def create_connection():
@@ -12,7 +13,7 @@ def create_connection():
         host='www.richgm.site',
         user=username',
         password=pwd,
-        db='nieDB',
+        db=dbname,
         charset='utf8mb4',
         cursorclass=pymysql.cursors.DictCursor
     )
